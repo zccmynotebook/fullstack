@@ -1,8 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import {Menu, Home,Topics} from './component/Home'
+import {Menu} from './component/Home'
+import { Home} from './component/Home'
+import List from './component/List'
+
 import Header from './component/Header'
-import {About} from './component/About'
+import {Login} from './component/Login'
+//import routes from './utils/router'
 import './App.css'
 function App() {
   return (
@@ -12,8 +16,9 @@ function App() {
         <div  className="menu"><Menu /></div>
         <div className="content">
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
+            <Route path="/login" component={Login} />
+            <Route path="/list" component={List} />
+           
         </div>
       </div>
     </Router>
