@@ -1,0 +1,24 @@
+
+h1{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 60px;
+}
+.header{
+  background: #3c8dbc;
+}
+.menu{
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 200px;
+  background: #337ab7;
+}
+.content{
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  background-color: aqua;
+  box-sizing: border-box;
+  padding: 10px;
+}
